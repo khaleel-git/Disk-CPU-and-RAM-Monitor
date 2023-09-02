@@ -1,5 +1,5 @@
 # Disk, CPU, and RAM Monitor
-![Delivery Monitoring](delivery_monitoring_long.png)
+![Delivery Monitoring](delivery_monitoring_email.png)
 
 ## Overview
 
