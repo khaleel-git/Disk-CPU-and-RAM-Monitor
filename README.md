@@ -60,8 +60,7 @@ plink_command = [
 - Replace "C:\\location_dir_for_pass\\pass.txt" with the path to your SSH password file.
 - Ensure Plink is in your system's PATH.
 
-### Initial SSH Configuration
-
+## Initial SSH Configuration
 **Manual SSH Login**: Perform the initial SSH login manually to each remote server:
 ```
 # This should be done at least once for storing ssh server host fingerprints into your local system
