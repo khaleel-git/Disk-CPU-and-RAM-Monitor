@@ -1,6 +1,5 @@
 # Disk, CPU, and RAM Monitor
-### Please Zoom below Picture for Better visibility
-➕
+### Please Zoom (➕) below Picture for Better visibility
 ![Delivery Monitoring](delivery_monitoring_email.png)
 
 ## Overview
