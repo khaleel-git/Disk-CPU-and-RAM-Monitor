@@ -3,11 +3,9 @@
 ![Delivery Monitoring](delivery_monitoring_email.png)
 
 ## Overview
-
 This Python-based monitoring tool provides insights into the disk, CPU, and RAM usage of both local and remote servers in a distributed computing environment. It offers a comprehensive view of resource utilization, helping you manage and optimize server performance.
 
 ## Features
-
 - **Local and Remote Monitoring**: Monitor resources on both the local machine and remote servers.
 - **Disk Usage**: Track disk space utilization, including total space, used space, free space, and usage percentage.
 - **RAM Usage**: Monitor RAM usage, including total RAM, available RAM, used RAM, free RAM, and usage percentage.
@@ -18,21 +16,18 @@ This Python-based monitoring tool provides insights into the disk, CPU, and RAM 
 - **Email Alerts**: Configure email alerts to notify relevant team members when critical resource thresholds are reached.
 
 ## How to Use
-
 1. Clone this repository to your local machine.
-   ```git clone https://github.com/khaleel-git/Disk-CPU-and-RAM-Monitor.git```
+   ```git clone https://github.com/khaleel-git/Disk-CPU-and-RAM-Monitor.git
+   ```
+3. Install the required dependencies:
+   ```pip install -r requirements.txt
+   ```
+4. Configure the monitoring parameters in the disk_monitoring.py script.
 
-2. Install the required dependencies:
+5. Run the monitoring script:
+   ```python disk_monitoring.py
    ```
-   pip install -r requirements.txt
-   ```
-3. Configure the monitoring parameters in the disk_monitoring.py script.
-
-4. Run the monitoring script:
-   ```
-   python disk_monitoring.py
-   ```
-5. View the HTML report generated in the same directory.
+6. View the HTML report generated in the same directory.
 
 ## Configuration
 - Master Node: Modify the master variable in disk_monitoring.py to set the master node's IP address.
@@ -40,15 +35,12 @@ This Python-based monitoring tool provides insights into the disk, CPU, and RAM 
 - Alert Thresholds: Customize threshold values for disk, RAM, and CPU usage alerts in the script.
 
 ## SSH Setup for Remote Monitoring
-
 Before you can remotely monitor servers using this tool, you need to set up SSH access to the remote servers and ensure that Plink is configured properly.
 
 ## Plink Configuration
 
 1. **[Download Plink](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)**: Download and install Plink from the official website.
-
 2. **Store SSH Keys**: Ensure that the SSH keys generated during the manual SSH login are stored in your SSH directory. These keys are used for key-based authentication when running the monitoring script remotely.
-
 3. Configure Plink Command: In disk_monitoring.py, configure the Plink command:
 ```
 plink_command = [
@@ -72,9 +64,7 @@ plink ssh username@remote_server_ip
 During the first SSH login, you will be prompted to confirm the server's authenticity.
 
 1. Enter Password: Enter the password for your SSH user account when prompted.
-
 2. SSH Key Verification: After successfully logging in, SSH will store the server's host key locally.
-
 # Remote Server Monitoring
 Now you can remotely monitor servers. Simply run the monitoring script to collect and analyze resource usage data from remote servers.
 
