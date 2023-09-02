@@ -17,15 +17,18 @@ This Python-based monitoring tool provides insights into the disk, CPU, and RAM 
 
 ## How to Use
 1. Clone this repository to your local machine.
-   ```git clone https://github.com/khaleel-git/Disk-CPU-and-RAM-Monitor.git
+   ```
+   git clone https://github.com/khaleel-git/Disk-CPU-and-RAM-Monitor.git
    ```
 3. Install the required dependencies:
-   ```pip install -r requirements.txt
+   ```
+   pip install -r requirements.txt
    ```
 4. Configure the monitoring parameters in the disk_monitoring.py script.
 
 5. Run the monitoring script:
-   ```python disk_monitoring.py
+   ```
+   python disk_monitoring.py
    ```
 6. View the HTML report generated in the same directory.
 
