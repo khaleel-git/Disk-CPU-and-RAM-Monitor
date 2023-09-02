@@ -1,7 +1,6 @@
 # Disk, CPU, and RAM Monitor
 ![Delivery Monitoring](delivery_monitoring_long.png)
 
-
 ## Overview
 
 This Python-based monitoring tool provides insights into the disk, CPU, and RAM usage of both local and remote servers in a distributed computing environment. It offers a comprehensive view of resource utilization, helping you manage and optimize server performance.
@@ -19,7 +18,7 @@ This Python-based monitoring tool provides insights into the disk, CPU, and RAM 
 
 ## How to Use
 
-1. Clone this repository to your local machine.
+1. Clone this repository to your local machine.```git clone https://github.com/khaleel-git/Disk-CPU-and-RAM-Monitor.git```
 
 2. Install the required dependencies:
    ```
