@@ -1,4 +1,5 @@
 # Disk, CPU, and RAM Monitor
+### Please Zoom below Picture for Better visibility
 ![Delivery Monitoring](delivery_monitoring_email.png)
 
 ## Overview
@@ -42,21 +43,6 @@ This Python-based monitoring tool provides insights into the disk, CPU, and RAM 
 
 Before you can remotely monitor servers using this tool, you need to set up SSH access to the remote servers and ensure that Plink is configured properly.
 
-### Initial SSH Configuration
-
-**Manual SSH Login**: Perform the initial SSH login manually to each remote server:
-```
-ssh username@remote_server_ip
-```
-- Replace your username with your SSH username.
-- Replace remote_server_ip with the IP address of the remote server.
-
-During the first SSH login, you will be prompted to confirm the server's authenticity.
-
-1. Enter Password: Enter the password for your SSH user account when prompted.
-
-2. SSH Key Verification: After successfully logging in, SSH will store the server's host key locally.
-
 ## Plink Configuration
 
 1. **[Download Plink](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)**: Download and install Plink from the official website.
@@ -73,6 +59,22 @@ plink_command = [
 ```
 - Replace "C:\\location_dir_for_pass\\pass.txt" with the path to your SSH password file.
 - Ensure Plink is in your system's PATH.
+
+### Initial SSH Configuration
+
+**Manual SSH Login**: Perform the initial SSH login manually to each remote server:
+```
+# This should be done at least once for storing ssh server host fingerprints into your local system
+plink ssh username@remote_server_ip
+```
+- Replace your username with your SSH username.
+- Replace remote_server_ip with the IP address of the remote server.
+
+During the first SSH login, you will be prompted to confirm the server's authenticity.
+
+1. Enter Password: Enter the password for your SSH user account when prompted.
+
+2. SSH Key Verification: After successfully logging in, SSH will store the server's host key locally.
 
 # Remote Server Monitoring
 Now you can remotely monitor servers. Simply run the monitoring script to collect and analyze resource usage data from remote servers.
