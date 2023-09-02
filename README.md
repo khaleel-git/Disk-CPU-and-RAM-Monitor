@@ -18,7 +18,8 @@ This Python-based monitoring tool provides insights into the disk, CPU, and RAM 
 
 ## How to Use
 
-1. Clone this repository to your local machine.```git clone https://github.com/khaleel-git/Disk-CPU-and-RAM-Monitor.git```
+1. Clone this repository to your local machine.
+   ```git clone https://github.com/khaleel-git/Disk-CPU-and-RAM-Monitor.git```
 
 2. Install the required dependencies:
    ```
@@ -47,7 +48,7 @@ Before you can remotely monitor servers using this tool, you need to set up SSH 
 ```
 ssh username@remote_server_ip
 ```
-- Replace username with your SSH username.
+- Replace your username with your SSH username.
 - Replace remote_server_ip with the IP address of the remote server.
 
 During the first SSH login, you will be prompted to confirm the server's authenticity.
@@ -80,7 +81,3 @@ Enjoy efficient server monitoring!
 
 ## Contact
 For inquiries and feedback, please contact [khaleel.org@gmail.com] or [+923076482365].
-
-
-
-
